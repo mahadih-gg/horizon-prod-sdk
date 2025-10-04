@@ -1,4 +1,4 @@
-import { FlagshipContainer } from "@thinkflagship/web-shorts";
+import { EntryPoint, EntryPointSize, EntryPointType, FlagshipContainer } from "@thinkflagship/web-shorts";
 import "@thinkflagship/web-shorts/dist/styles.css";
 import './App.css';
 
@@ -6,7 +6,6 @@ function App() {
 
   const LICENSE_KEY =
     "pk_live_7641a6a803379ca11f368336825d69d54e9437ff3ed60125.eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiUHJvZC1RQSIsInBsYXRmb3JtVHlwZSI6IldFQiIsImRvbWFpbiI6eyJkb21haW4iOiJodHRwczovL2hvcml6b24tcHJvZC1zZGsudmVyY2VsLmFwcC8iLCJ2ZXJpZmllZCI6ZmFsc2V9LCJleHBpcmVzQXQiOiIyMTI1LTA5LTEwVDA2OjM2OjQxLjUyNVoiLCJjcmVhdGVkQnkiOiI2OGUwYjk4OTNjZjA1YTc5OTVlODhkMTUiLCJ0ZW5hbnRJZCI6IjY4ZTBiOTg5M2NmMDVhNzk5NWU4OGQxMSIsIl9pZCI6IjY4ZTBjMDc5Y2E5MDc4NjNkNjhiZDQxYiIsInRva2VuVHlwZSI6ImFjY2VzcyIsImlhdCI6MTc1OTU1OTgwMSwiZXhwIjo0OTEzMTU5ODAxfQ.Cv8hvLSrMiVAmbuqZaJthgp1QkTpdOo0DQKl8CIUdgA";
-
 
   return (
     <div className="app">
@@ -128,6 +127,12 @@ function App() {
             </div>
           </div>
         </section>
+
+        <EntryPoint
+          id="#812890"
+          skeletonType={EntryPointType.RECTANGLE}
+          skeletonSize={EntryPointSize.BOLD}
+        />
 
         {/* Testimonials */}
         <section className="testimonials">
